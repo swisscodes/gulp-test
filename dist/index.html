@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+     <!-- External css -->
+    <link rel="stylesheet" href="./frontend/css/main.css">
+    <!--Internal css-->
+    <style>
+      .class {
+      	color:red;
+      }
+    </style>
+  </head>
+  <body> 
+    <div> 
+      <h1>Hello world</h1>
+      <h2 id="myid">this is how to add id to pug</h2>
+      <p class="myclass">normal paragraph and how to add class</p>
+      <!--another style of comment guess we in javascript here-->
+      <p>
+        <!-- just some paragraphs-->
+        multiline text test this might be ok
+        just another text	
+      </p>
+    </div>
+    <div> 
+      <h1>inside another div</h1>
+      <p class="okayclass" id="any">multiple attributes</p>
+      <p class="class-again" data-js="ok">using attributes and passing js data or using js inside</p>
+    </div>
+    <div class="class1 class2 class3">
+      <p>'class with javascipt'</p>
+      <p style="color:red;">inline style  we can also use javascript variable like above</p>
+    </div>
+    <div>
+      <p>multi line js </p>
+      <p class="ok try">test</p>
+    </div>
+    <div> 
+      <p>passing all atrributes in one </p>
+      <p class="class1 class2 class3" id="myid" anything="anything"></p>
+    </div>
+    <div> 
+      <p>html attributes </p>
+      <button disabled>another may to pass html attibutes instead of disabled=true //inline boolean</button>
+    </div>
+  </body>
+</html>

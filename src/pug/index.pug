@@ -1,0 +1,47 @@
+doctype html
+html
+	head 
+		<!-- External css -->
+		link(rel="stylesheet", href="./frontend/css/main.css")
+		//Internal css
+		style. 
+			.class {
+				color:red;
+			}
+	body 
+		div 
+			h1 Hello world
+			h2#myid this is how to add id to pug
+			p.myclass normal paragraph and how to add class
+			//another style of comment guess we in javascript here
+			p.
+				<!-- just some paragraphs-->
+				multiline text test this might be ok
+				just another text	
+		div 
+			h1 inside another div
+			p(class='okayclass' id='any') multiple attributes
+			p(
+				class='class-again' data-js=`${5>2? 'ok':'not ok'}`
+			) using attributes and passing js data or using js inside
+
+		- const myClasses = ['class1', 'class2', 'class3']
+		div(class=myClasses)
+			p 'class with javascipt'
+			p(style='color:red;') inline style  we can also use javascript variable like above
+
+		div
+			p multi line js 
+			- 
+				const a = 'ok'
+				const gg = 'try'
+			p(class=`${a} ${gg}`) test
+
+		div 
+			p passing all atrributes in one 
+			- var myAttibutes = {class:myClasses, id:'myid', anything:'anything'}
+			p&attributes(myAttibutes)
+
+		div 
+			p html attributes 
+			button( disabled) another may to pass html attibutes instead of disabled=true //inline boolean
